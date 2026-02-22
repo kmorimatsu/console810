@@ -6,7 +6,7 @@
 */
 
 /*
- * 'vsyncture' is set to get proper video signal construction frequency.
+ * 'vsynctune' is set to get proper video signal construction frequency.
  * -4 <= vsynctune <= 4
  * After setting proper value, signal frequency of Pin #3 will be 16275 Hz.
  *
@@ -21,3 +21,11 @@
 
 #define KEYBOARD101
 //#define KEYBOARD106
+
+/*
+ * Baud rate definition
+ * (experimental and not tested)
+ *
+ */
+
+#define BAUDRATE 9600

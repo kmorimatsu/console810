@@ -3,7 +3,7 @@ extern volatile unsigned char vram[768];
 extern const unsigned char cgrom[];
 
 void ntsc_init(void);
-volatile int g_videoline;
+extern volatile int g_videoline;
 
 inline void check_ps2(void);
 inline void completed_ps2(void);

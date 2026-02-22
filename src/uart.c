@@ -7,9 +7,13 @@
 
 #include "LPC8xx.h"
 #include "./prototypes.h"
+#include "./config.h"
 
 #define TXBUFF_SIZE 16
-#define BAUDRATE 9600
+#ifndef BAUDRATE
+	// Note: Baudrate must be defined in config.h.
+	#define BAUDRATE 9600
+#endif
 #define SYSCLK 24000000
 #define DATA_LENG_8 (1<<2)
 #define PARITY_NONE (0<<4)
